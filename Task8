@@ -1,0 +1,15 @@
+# Посчитать, сколько раз встречается определенная цифра в введенной последовательности чисел.
+# Количество вводимых чисел и цифра, которую необходимо посчитать, задаются вводом с клавиатуры.
+''' https://drive.google.com/file/d/1QWJyw486ySx1XtIXIMSIokGZx_0uSiHt/view?usp=sharing'''
+
+user_symbol = input('Введите последовательность цифр: ')
+user_figures = input('Введите цифру для поиска: ')
+count = 0
+
+for i in user_symbol:
+    if i == user_figures:
+        count += 1
+
+print(
+    f'Цифра {user_figures} встречается  в последовательности {user_symbol}: \
+{count} раз(а)')
