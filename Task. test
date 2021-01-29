@@ -1,0 +1,11 @@
+user_symbol = input('Введите последовательность цифр: ')
+user_figures = input('Введите цифру для поиска: ')
+count = 0
+
+for i in user_symbol:
+    if i == user_figures:
+        count += 1
+
+print(
+    f'Цифра {user_figures} встречается  в последовательности {user_symbol}: \
+{count} раз(а)')
